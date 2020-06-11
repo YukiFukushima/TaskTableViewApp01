@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PayOffViewController" customModule="TaskTableViewApp01" customModuleProvider="target">
+            <connections>
+                <outlet property="cartLabel" destination="1TQ-5J-Ka2" id="vPj-Wd-sA2"/>
+                <outlet property="payOffTableView" destination="VVZ-2V-cY1" id="ITq-mI-PWy"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VVZ-2V-cY1">
+                    <rect key="frame" x="0.0" y="84" width="414" height="778"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shopping Cart" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1TQ-5J-Ka2">
+                    <rect key="frame" x="153.5" y="55" width="107" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="VVZ-2V-cY1" secondAttribute="trailing" id="FDw-KE-y88"/>
+                <constraint firstItem="VVZ-2V-cY1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="NHz-OW-JiL"/>
+                <constraint firstItem="1TQ-5J-Ka2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="XtZ-aO-MXz"/>
+                <constraint firstItem="VVZ-2V-cY1" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="ZgL-8O-1zF"/>
+                <constraint firstItem="1TQ-5J-Ka2" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="11" id="biu-Vl-Xtm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="VVZ-2V-cY1" secondAttribute="bottom" id="kUq-md-K83"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="130.58035714285714"/>
+        </view>
+    </objects>
+</document>
